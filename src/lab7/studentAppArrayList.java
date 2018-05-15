@@ -27,8 +27,8 @@ public class studentAppArrayList {
 
     private static ArrayList inputData(ArrayList<Student> myList, int val) throws IOException {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+        Student s = new Student();
         for (int i=1; i<=val; i++) {
-            Student s = new Student();
             System.out.println("Enter student info "+i+" : ");
             System.out.print("Name: ");
             s.setName(reader.readLine());
